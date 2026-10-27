@@ -1,0 +1,894 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blissful - Home</title>
+
+  <!-- Tailwind -->
+  <script src="js/browser@4.js"></script>
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body class="bg-white">
+
+  <!-- Navbar Section -->
+  <div>
+
+    <!-- Top Bar -->
+    <div class="bg-rose-500 text-white text-xs py-2 px-4 md:px-6">
+      <div class="max-w-7xl mx-auto flex justify-between items-center gap-3">
+
+        <div class="flex gap-4 text-md">
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a href="#" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a href="#" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </div>
+
+        <div class="hidden md:flex gap-4">
+          <span>
+            <i class="fa-solid fa-location-dot"></i>
+            123 Wedding Street, Love City, LC 12345
+          </span>
+
+          <span>
+            <i class="fa-solid fa-envelope"></i>
+            info@yourwebsite.com
+          </span>
+        </div>
+
+        <a href="tel:+1234567890">
+          <i class="fa-solid fa-phone"></i>
+          +1 234 567 890
+        </a>
+
+      </div>
+    </div>
+    <!-- End Top Bar -->
+
+
+    <!-- Main Navbar -->
+    <nav class="bg-white shadow-sm relative z-50">
+      <div class="max-w-7xl mx-auto px-4 md:px-5 py-4 flex items-center justify-between gap-4">
+
+        <a href="#home" class="flex items-center gap-2 shrink-0">
+          <img src="img/Henna Logo-02 2.png" alt="logo">
+        </a>
+
+        <div class="hidden lg:flex items-center gap-10 text-sm font-medium">
+          <a href="#home" class="text-rose-500 border-b-2 border-rose-500 pb-2">Home</a>
+          <a href="#about" class="text-gray-700 hover:text-rose-500 transition">About Us</a>
+          <a href="#services" class="text-gray-700 hover:text-rose-500 transition">Our Services</a>
+          <a href="#gallery" class="text-gray-700 hover:text-rose-500 transition">Gallery</a>
+          <a href="#articles" class="text-gray-700 hover:text-rose-500 transition">Articles</a>
+          <a href="#contact" class="text-gray-700 hover:text-rose-500 transition">Contact</a>
+        </div>
+
+        <form class="hidden md:flex items-center bg-teal-50 rounded-full px-4 py-2 gap-2"
+              role="search"
+              onsubmit="event.preventDefault()">
+          <button type="submit" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass text-teal-700"></i>
+          </button>
+
+          <input type="search"
+                 placeholder="Search..."
+                 class="bg-transparent outline-none text-sm w-37 focus:w-40 transition-all">
+        </form>
+
+        <a href="#booking"
+           class="hidden sm:flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white px-5 py-3 rounded-md text-sm font-semibold transition">
+          Book Now
+          <i class="fa-regular fa-calendar-check"></i>
+        </a>
+
+        <button id="menuBtn"
+                type="button"
+                class="lg:hidden text-gray-700 hover:text-rose-500 text-2xl p-1"
+                aria-label="Open navigation menu"
+                aria-controls="mobileMenu"
+                aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobileMenu"
+           class="hidden lg:hidden border-t border-gray-100 px-5 py-5 flex-col gap-5 text-sm font-medium bg-white">
+
+        <a href="#home" class="text-rose-500 hover:text-rose-600">Home</a>
+        <a href="#about" class="text-gray-700 hover:text-rose-500">About Us</a>
+        <a href="#services" class="text-gray-700 hover:text-rose-500">Our Services</a>
+        <a href="#gallery" class="text-gray-700 hover:text-rose-500">Gallery</a>
+        <a href="#articles" class="text-gray-700 hover:text-rose-500">Articles</a>
+        <a href="#contact" class="text-gray-700 hover:text-rose-500">Contact</a>
+
+        <form class="flex items-center bg-teal-50 rounded-full px-4 py-3 gap-2"
+              role="search"
+              onsubmit="event.preventDefault()">
+          <i class="fa-solid fa-magnifying-glass text-teal-700"></i>
+
+          <input type="search"
+                 placeholder="Search..."
+                 class="bg-transparent outline-none text-sm w-full">
+        </form>
+
+        <a href="#booking"
+           class="bg-rose-500 hover:bg-rose-600 text-white text-center p-3 rounded-md transition">
+          Book Now
+          <i class="fa-regular fa-calendar-check ml-1"></i>
+        </a>
+
+      </div>
+    </nav>
+    <!-- End Main Navbar -->
+
+
+    <!-- Account Navbar -->
+    <nav class="bg-white shadow-sm">
+      <div class="max-w-7xl mx-auto px-2 py-1 flex items-center justify-between">
+
+        <a href="#home" class="text-gray-700 hover:text-rose-500 font-semibold text-lg transition">
+          Home
+        </a>
+
+        <div class="flex items-center gap-3">
+          <a href="#register"
+             class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white px-5 py-3 rounded-md font-semibold transition duration-300">
+            Create Account
+          </a>
+
+          <a href="#login"
+             class="inline-flex items-center gap-2 border border-rose-500 text-rose-500 hover:bg-rose-50 px-5 py-3 rounded-md font-semibold transition duration-300">
+            Login
+          </a>
+        </div>
+
+      </div>
+    </nav>
+    <!-- End Account Navbar -->
+
+  </div>
+  <!-- End Navbar Section -->
+
+
+  <!-- Hero Section -->
+  <section id="home"
+           class="relative min-h-[580px] md:min-h-[700px] w-full flex items-center bg-cover bg-bottom bg-no-repeat section_1">
+
+    <div class="absolute inset-0 bg-black/25"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-10">
+      <div class="max-w-lg text-white">
+
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">WELCOME</h1>
+
+        <p class="text-lg md:text-xl font-medium leading-relaxed mb-6">
+          A world of memorable events for weddings,<br>
+          parties and special occasions.
+        </p>
+
+        <a href="#services"
+           class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-md font-semibold transition duration-300">
+          Get started
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- End Hero Section -->
+
+<!-- Categories Slider -->
+<section class="w-full max-w-[95%] mx-auto py-8 px-4">
+
+  <div id="categorySlider"
+       class="flex gap-5 overflow-x-auto cursor-grab select-none"
+       style="scrollbar-width: none; scroll-behavior: auto">
+
+    <!-- Weddings -->
+    <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+      <img src="img/img-cate.png"
+           alt="Weddings"
+           draggable="false"
+           class="w-full h-full object-cover pointer-events-none">
+
+      <div class="absolute bottom-0 w-full bg-[#a87564]/90 text-white text-center py-3 font-bold">
+        WEDDINGS
+      </div>
+    </div>
+
+    <!-- Events -->
+    <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+      <img src="img/img-cate.png"
+           alt="Events"
+           draggable="false"
+           class="w-full h-full object-cover pointer-events-none">
+
+      <div class="absolute bottom-0 w-full bg-[#a87564]/90 text-white text-center py-3 font-bold">
+        EVENTS
+      </div>
+    </div>
+
+    <!-- Birthdays -->
+    <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+      <img src="img/img-cate.png"
+           alt="Birthdays"
+           draggable="false"
+           class="w-full h-full object-cover pointer-events-none">
+
+      <div class="absolute bottom-0 w-full bg-[#a87564]/90 text-white text-center py-3 font-bold">
+        BIRTHDAYS
+      </div>
+    </div>
+
+    <!-- Engagement -->
+    <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+      <img src="img/img-cate-1.png"
+           alt="Engagement"
+           draggable="false"
+           class="w-full h-full object-cover pointer-events-none">
+
+      <div class="absolute bottom-0 w-full bg-[#f4b0a2]/90 text-white text-center py-3 font-bold">
+        ENGAGEMENT
+      </div>
+    </div>
+
+    <!-- Bridal -->
+    <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+      <img src="img/img-cate-2.png"
+           alt="Bridal"
+           draggable="false"
+           class="w-full h-full object-cover pointer-events-none">
+
+      <div class="absolute bottom-0 w-full bg-[#f4b0a2]/90 text-white text-center py-3 font-bold">
+        BRIDAL
+      </div>
+    </div>
+
+    <!-- Parties -->
+    <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+      <img src="img/img-cate-1.png"
+           alt="Parties"
+           draggable="false"
+           class="w-full h-full object-cover pointer-events-none">
+
+      <div class="absolute bottom-0 w-full bg-[#a87564]/90 text-white text-center py-3 font-bold">
+        PARTIES
+      </div>
+    </div>
+
+    <!-- Celebrations -->
+    <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+      <img src="img/img-cate.png"
+           alt="Celebrations"
+           draggable="false"
+           class="w-full h-full object-cover pointer-events-none">
+
+      <div class="absolute bottom-0 w-full bg-[#a87564]/90 text-white text-center py-3 font-bold">
+        CELEBRATIONS
+      </div>
+    </div>
+
+    <!-- Special Occasions -->
+    <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+      <img src="img/img-cate-1.png"
+           alt="Special Occasions"
+           draggable="false"
+           class="w-full h-full object-cover pointer-events-none">
+
+      <div class="absolute bottom-0 w-full bg-[#f4b0a2]/90 text-white text-center py-3 font-bold">
+        SPECIAL OCCASIONS
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- End Categories Slider -->
+
+  <!-- ==================== Start Section: Our Providers ==================== -->
+  <section class="w-full max-w-[95%] mx-auto py-8 px-4">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold text-gray-800">Our Providers</h2>
+      <a href="#providers" class="text-sm text-sky-400">See All Providers</a>
+    </div>
+
+    <!-- Providers Slider -->
+    <div id="Providers" class="flex gap-5 overflow-x-auto cursor-grab select-none" style="scrollbar-width: none">
+
+      <!-- Provider 1 -->
+      <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+        <img src="img/LOGO PROVIDER-3.png" draggable="false" class="w-full h-full object-cover pointer-events-none"
+          alt="Hala Makeup Artist" />
+        <div class="absolute bottom-3 left-2 right-2 bg-[#e9f3e9] text-center py-2 rounded-lg font-semibold text-sm">
+          Hala Makeup Artist
+        </div>
+      </div>
+
+      <!-- Provider 2 -->
+      <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+        <img src="img/LOGO PROVIDER-3.png" draggable="false" class="w-full h-full object-cover pointer-events-none"
+          alt="Hala Makeup Artist" />
+        <div class="absolute bottom-3 left-2 right-2 bg-[#e9f3e9] text-center py-2 rounded-lg font-semibold text-sm">
+          Hala Makeup Artist
+        </div>
+      </div>
+
+      <!-- Provider 3 -->
+      <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+        <img src="img/LOGO PROVIDER-3.png" draggable="false" class="w-full h-full object-cover pointer-events-none"
+          alt="Hala Makeup Artist" />
+        <div class="absolute bottom-3 left-2 right-2 bg-[#e9f3e9] text-center py-2 rounded-lg font-semibold text-sm">
+          Hala Makeup Artist
+        </div>
+      </div>
+
+      <!-- Provider 4 -->
+      <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+        <img src="img/LOGO PROVIDER-3.png" draggable="false" class="w-full h-full object-cover pointer-events-none"
+          alt="Hala Makeup Artist" />
+        <div class="absolute bottom-3 left-2 right-2 bg-[#e9f3e9] text-center py-2 rounded-lg font-semibold text-sm">
+          Hala Makeup Artist
+        </div>
+      </div>
+
+      <!-- Provider 5 -->
+      <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+        <img src="img/LOGO PROVIDER-3.png" draggable="false" class="w-full h-full object-cover pointer-events-none"
+          alt="Hala Makeup Artist" />
+        <div class="absolute bottom-3 left-2 right-2 bg-[#e9f3e9] text-center py-2 rounded-lg font-semibold text-sm">
+          Hala Makeup Artist
+        </div>
+      </div>
+
+      <!-- Provider 6 -->
+      <div class="relative shrink-0 w-[calc((100%-80px)/5)] min-w-[150px] h-55 rounded-xl overflow-hidden">
+        <img src="img/LOGO PROVIDER-3.png" draggable="false" class="w-full h-full object-cover pointer-events-none"
+          alt="Hala Makeup Artist" />
+        <div class="absolute bottom-3 left-2 right-2 bg-[#e9f3e9] text-center py-2 rounded-lg font-semibold text-sm">
+          Hala Makeup Artist
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ==================== End Section: Our Providers ==================== -->
+
+
+  <!-- ==================== Start Section: Our Services ==================== -->
+  <section class="w-full max-w-[95%] mx-auto py-8 px-4">
+
+    <!-- Header -->
+    <div class="flex items-center justify-between mb-6">
+      <h2 class="text-2xl font-bold text-gray-800">Our Services</h2>
+
+      <a href="#all-services" class="text-sm text-sky-400 hover:text-sky-600">
+        See All Services
+      </a>
+    </div>
+
+    <!-- Services Slider -->
+    <div id="servicesSlider" class="flex gap-5 overflow-x-auto cursor-grab select-none" style="scrollbar-width: none">
+
+      <!-- Service 1 -->
+      <div
+        class="shrink-0 w-[calc((100%-80px)/5)] min-w-[180px] rounded-2xl overflow-hidden bg-white shadow-md border border-gray-100">
+        <div class="relative h-32">
+          <img src="img/service-1.png" alt="Photographer" draggable="false"
+            class="w-full h-full object-cover pointer-events-none" />
+
+          <button type="button" class="favorite-btn absolute top-2 right-2 bg-white rounded-md p-1.5 shadow"
+            aria-label="Add to favorites">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+            </svg>
+          </button>
+
+          <span class="absolute bottom-2 right-2 bg-[#e5f5d9] text-green-700 text-[9px] px-2 py-1 rounded">
+            AVAILABLE
+          </span>
+        </div>
+
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 text-sm">photographer</h3>
+          <p class="text-gray-400 text-xs mt-1">category name</p>
+
+          <div class="flex items-center gap-1 mt-2 text-amber-500">
+            <span class="text-3xl leading-none">☆ ☆ ☆ ☆</span>
+            <span class="text-sky-400 text-2xs">(20)</span>
+          </div>
+
+          <button
+            class="w-full border border-gray-400 rounded-md py-2 mt-6 text-xs text-gray-500 hover:bg-gray-100 transition">
+            VIEW
+          </button>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div
+        class="shrink-0 w-[calc((100%-80px)/5)] min-w-[180px] rounded-2xl overflow-hidden bg-white shadow-md border border-gray-100">
+        <div class="relative h-32">
+          <img src="img/service-2.png" alt="Photographer" draggable="false"
+            class="w-full h-full object-cover pointer-events-none" />
+
+          <button type="button" class="favorite-btn absolute top-2 right-2 bg-white rounded-md p-1.5 shadow"
+            aria-label="Add to favorites">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+            </svg>
+          </button>
+
+          <span class="absolute bottom-2 right-2 bg-[#e5f5d9] text-green-700 text-[9px] px-2 py-1 rounded">
+            AVAILABLE
+          </span>
+        </div>
+
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 text-sm">photographer</h3>
+          <p class="text-gray-400 text-xs mt-1">category name</p>
+          <div class="flex items-center gap-1 mt-2 text-amber-500">
+            <span class="text-3xl leading-none">☆ ☆ ☆ ☆</span>
+            <span class="text-sky-400 text-2xs">(21)</span>
+          </div>
+          <button
+            class="w-full border border-gray-400 rounded-md py-2 mt-6 text-xs text-gray-500 hover:bg-gray-100 transition">
+            VIEW
+          </button>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div
+        class="shrink-0 w-[calc((100%-80px)/5)] min-w-[180px] rounded-2xl overflow-hidden bg-white shadow-md border border-gray-100">
+        <div class="relative h-32">
+          <img src="img/service-2.png" alt="Photographer" draggable="false"
+            class="w-full h-full object-cover pointer-events-none" />
+          <button type="button" class="favorite-btn absolute top-2 right-2 bg-white rounded-md p-1.5 shadow"
+            aria-label="Add to favorites">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+            </svg>
+          </button>
+          <span class="absolute bottom-2 right-2 bg-[#e5f5d9] text-green-700 text-[9px] px-2 py-1 rounded">
+            AVAILABLE
+          </span>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 text-sm">photographer</h3>
+          <p class="text-gray-400 text-xs mt-1">category name</p>
+          <div class="flex items-center gap-1 mt-2 text-amber-500">
+            <span class="text-3xl leading-none">☆ ☆ ☆ ☆</span>
+            <span class="text-sky-400 text-2xs">(21)</span>
+          </div>
+          <button
+            class="w-full border border-gray-400 rounded-md py-2 mt-6 text-xs text-gray-500 hover:bg-gray-100 transition">
+            VIEW
+          </button>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div
+        class="shrink-0 w-[calc((100%-80px)/5)] min-w-[180px] rounded-2xl overflow-hidden bg-white shadow-md border border-gray-100">
+        <div class="relative h-32">
+          <img src="img/service-3.png" alt="Photographer" draggable="false"
+            class="w-full h-full object-cover pointer-events-none" />
+          <button type="button" class="favorite-btn absolute top-2 right-2 bg-white rounded-md p-1.5 shadow"
+            aria-label="Add to favorites">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+            </svg>
+          </button>
+          <span class="absolute bottom-2 right-2 bg-[#e5f5d9] text-green-700 text-[9px] px-2 py-1 rounded">
+            AVAILABLE
+          </span>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 text-sm">photographer</h3>
+          <p class="text-gray-400 text-xs mt-1">category name</p>
+          <div class="flex items-center gap-1 mt-2 text-amber-500">
+            <span class="text-3xl leading-none">☆ ☆ ☆ ☆</span>
+            <span class="text-sky-400 text-2xs">(20)</span>
+          </div>
+          <button
+            class="w-full border border-gray-400 rounded-md py-2 mt-6 text-xs text-gray-500 hover:bg-gray-100 transition">
+            VIEW
+          </button>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div
+        class="shrink-0 w-[calc((100%-80px)/5)] min-w-[180px] rounded-2xl overflow-hidden bg-white shadow-md border border-gray-100">
+        <div class="relative h-32">
+          <img src="img/service-1.png" alt="Photographer" draggable="false"
+            class="w-full h-full object-cover pointer-events-none" />
+          <button type="button" class="favorite-btn absolute top-2 right-2 bg-white rounded-md p-1.5 shadow"
+            aria-label="Add to favorites">
+            <svg class="w-4 h-4 text-gray-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" />
+            </svg>
+          </button>
+          <span class="absolute bottom-2 right-2 bg-[#e5f5d9] text-green-700 text-[9px] px-2 py-1 rounded">
+            AVAILABLE
+          </span>
+        </div>
+        <div class="p-4">
+          <h3 class="font-semibold text-gray-900 text-sm">photographer</h3>
+          <p class="text-gray-400 text-xs mt-1">category name</p>
+          <div class="flex items-center gap-1 mt-2 text-amber-500">
+            <span class="text-3xl leading-none">☆ ☆ ☆ ☆</span>
+            <span class="text-sky-400 text-2xs">(21)</span>
+          </div>
+          <button
+            class="w-full border border-gray-400 rounded-md py-2 mt-6 text-xs text-gray-500 hover:bg-gray-100 transition">
+            VIEW
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ==================== End Section: Our Services ==================== -->
+
+
+  <!-- ==================== Start Section: Join Our Providers ==================== -->
+  <section class="w-full py-16 overflow-hidden">
+    <div class="w-full max-w-[1400px] mx-auto px-4 md:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr] gap-8 lg:gap-12 items-center">
+
+        <!-- Left Content -->
+        <div class="w-full max-w-md md:-ml-6 lg:-ml-10">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight mb-4">
+            Join
+            <br />
+            To Our Providers
+          </h2>
+
+          <p class="text-gray-600 text-sm md:text-base leading-7 mb-3">
+            Numquam ut sed autem molestias quo<br />
+            voluptate voluptas. Esse alias dolorum<br />
+            velit molestiae quas voluptas. A aut animi<br />
+            iusto quam, itaque accusantium nobis<br />
+            nobis doloremque eligendi.
+          </p>
+
+          <a href="#join"
+            class="inline-flex items-center justify-center bg-[#c95860] hover:bg-[#b94750] text-white px-18 py-3 rounded-lg transition duration-300">
+            Join
+          </a>
+        </div>
+
+        <!-- Right Cards -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-5">
+
+          <!-- Card 1 -->
+          <div class="relative h-40 md:h-44 rounded-xl overflow-hidden shadow-sm">
+            <img src="img/LOGO PROVIDER.png" alt="Hala Makeup Artist" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-3 left-1 right-1 bg-[#e4f0e5]/95 text-gray-800 text-center text-xs font-semibold py-3 rounded-md">
+              Hala Makeup Artist
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="relative h-40 md:h-44 rounded-xl overflow-hidden shadow-sm">
+            <img src="img/LOGO PROVIDER.png" alt="Hala Makeup Artist" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-3 left-1 right-1 bg-[#e4f0e5]/95 text-gray-800 text-center text-xs font-semibold py-3 rounded-md">
+              Hala Makeup Artist
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="relative h-40 md:h-44 rounded-xl overflow-hidden shadow-sm">
+            <img src="img/LOGO PROVIDER.png" alt="Hala Makeup Artist" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-3 left-1 right-1 bg-[#e4f0e5]/95 text-gray-800 text-center text-xs font-semibold py-3 rounded-md">
+              Hala Makeup Artist
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="relative h-40 md:h-44 rounded-xl overflow-hidden shadow-sm">
+            <img src="img/LOGO PROVIDER-1.png" alt="Hala Makeup Artist" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-3 left-1 right-1 bg-[#e4f0e5]/95 text-gray-800 text-center text-xs font-semibold py-3 rounded-md">
+              Hala Makeup Artist
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="relative h-40 md:h-44 rounded-xl overflow-hidden shadow-sm">
+            <img src="img/LOGO PROVIDER-1.png" alt="Hala Makeup Artist" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-3 left-1 right-1 bg-[#e4f0e5]/95 text-gray-800 text-center text-xs font-semibold py-3 rounded-md">
+              Hala Makeup Artist
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="relative h-40 md:h-44 rounded-xl overflow-hidden shadow-sm">
+            <img src="img/LOGO PROVIDER-1.png" alt="Hala Makeup Artist" class="w-full h-full object-cover" />
+            <div
+              class="absolute bottom-3 left-1 right-1 bg-[#e4f0e5]/95 text-gray-800 text-center text-xs font-semibold py-3 rounded-md">
+              Hala Makeup Artist
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== End Section: Join Our Providers ==================== -->
+
+
+  <!-- ==================== Start Section: Newsletter ==================== -->
+  <section class="w-full max-w-5xl mx-auto px-4 py-12 text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-4">Newsletter</h2>
+
+    <p class="text-gray-500 text-sm leading-6 max-w-2xl mx-auto mb-4">
+      Be the first one to know about discounts, offers and events weekly in
+      your mailbox. Unsubscribe whenever you like with one click.
+    </p>
+
+    <form class="flex flex-col sm:flex-row justify-center gap-3 max-w-md mx-auto" onsubmit="event.preventDefault()">
+      <div class="flex items-center gap-3 bg-[#e5f4e9] px-4 py-3 rounded-sm flex-1">
+        <i class="fa-regular fa-envelope text-gray-700"></i>
+
+        <input type="email" placeholder="Enter Your E-Mail" required
+          class="w-full bg-transparent outline-none text-sm text-gray-700 placeholder-gray-400" />
+      </div>
+
+      <button type="submit" class="bg-[#c95860] hover:bg-[#b94750] text-white px-6 py-3 rounded-sm text-sm transition">
+        Submit
+      </button>
+    </form>
+  </section>
+  <!-- ==================== End Section: Newsletter ==================== -->
+
+
+  <!-- ==================== Start Section: Download Mobile App ==================== -->
+  <section class="w-full max-w-6xl mx-auto px-4 pb-12">
+    <div
+      class="relative min-h-[650px] md:min-h-[450px] rounded-2xl overflow-hidden bg-cover bg-center flex items-center"
+      style="
+          background-image:
+            url(&quot;img/Rectangle 34.png&quot;),
+            url(&quot;img/Rectangle 19.png&quot;);
+        ">
+
+      <!-- Dark Overlay -->
+      <div class="absolute inset-0 bg-[#003b3b]/75"></div>
+
+      <!-- Content -->
+      <div class="relative z-10 max-w-xl p-6 md:p-10 text-white">
+        <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-6">
+          Download
+          <br />
+          Henna Mobile App
+        </h2>
+
+        <p class="text-white/75 text-sm md:text-base leading-7 mb-6 max-w-md">
+          Numquam ut sed autem molestias quo voluptate voluptas. Esse alias
+          dolorum velit molestiae quas voluptas.
+        </p>
+
+        <!-- Download Buttons -->
+        <div class="flex flex-wrap gap-3">
+          <a href="#ios"
+            class="inline-flex items-center justify-center gap-2 border border-white/70 hover:bg-white/10 px-10 rounded-sm py-3 text-sm font-semibold transition">
+            <i class="fa-solid fa-download"></i>
+            Download IOS
+          </a>
+
+          <a href="#android"
+            class="inline-flex items-center justify-center gap-2 bg-[#f7c8b8] hover:bg-[#f2b7a5] text-[#704c45] rounded-sm px-12 py-3 text-sm font-semibold transition">
+            <i class="fa-brands fa-android"></i>
+            Download Android
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- ==================== End Section: Download Mobile App ==================== -->
+
+
+  <!-- ==================== Start Section: About Henna ==================== -->
+  <section id="about" class="w-full px-6 md:px-10 lg:px-14 py-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-5">About Henna</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+
+      <!-- Objectives -->
+      <div
+        class="min-h-[280px] max-w-[95%] rounded-2xl p-6 md:p-7 text-white bg-gradient-to-br from-[#cc5b65] to-[#ff8064]">
+        <h3 class="text-2xl md:text-3xl font-semibold mb-4">Objectives</h3>
+
+        <p class="text-sm md:text-base leading-7 text-white/90">
+          Lorem ipsum dolor sit amet,<br />
+          consectetur adipisicing elit. Aspernatur,<br />
+          molestias. Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+
+      <!-- Visions -->
+      <div
+        class="min-h-[220px] max-w-[95%] rounded-2xl p-6 md:p-7 text-white bg-gradient-to-br from-[#278b8c] to-[#55d0cc]">
+        <h3 class="text-2xl md:text-3xl font-semibold mb-4">Visions</h3>
+
+        <p class="text-sm md:text-base leading-7 text-white/90">
+          Lorem ipsum dolor sit amet,<br />
+          consectetur adipisicing elit. Aspernatur<br />, molestias. Lorem
+          ipsum dolor sit amet.
+        </p>
+      </div>
+
+      <!-- Missions -->
+      <div
+        class="min-h-[220px] max-w-[95%] rounded-2xl p-6 md:p-7 text-white bg-gradient-to-br from-[#cc5b65] to-[#ff8064]">
+        <h3 class="text-2xl md:text-3xl font-semibold mb-4">Missions</h3>
+
+        <p class="text-sm md:text-base leading-7 text-white/90">
+          Lorem ipsum dolor sit amet,<br />
+          consectetur adipisicing elit. Aspernatur, molestias.<br />
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  <!-- ==================== End Section: About Henna ==================== -->
+
+
+  <!-- ==================== Start Section: Footer ==================== -->
+  <footer class="w-full bg-white px-6 md:px-10 lg:px-14 pt-12 pb-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_0.8fr_0.6fr_0.6fr] gap-10 lg:gap-16">
+
+      <!-- Logo & Description -->
+      <div class="max-w-md">
+        <a href="#home" class="inline-block mb-3">
+          <img src="img/Henna Logo-02 2.png" alt="Henna Logo" class="w-32 h-auto object-contain" />
+        </a>
+
+        <p class="text-gray-500 text-sm leading-6 mb-5">
+          We are a lorem ipsum dolor sit amet, consectetur adipisicing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat.
+        </p>
+
+        <!-- Contact -->
+        <div class="flex items-center gap-3">
+          <div class="shrink-0 w-10 h-10 rounded-full bg-[#fff0ec] flex items-center justify-center">
+            <img src="img/vector-message.png" alt="Email" class="w-6 h-6 object-contain" />
+          </div>
+
+          <div>
+            <p class="text-gray-500 text-xs mb-1">CONTACT US</p>
+            <a href="mailto:evedesign@example.com" class="text-[#b96d70] text-sm hover:underline">
+              evedesign@example.com
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Useful Links -->
+      <div>
+        <h3 class="text-base font-bold text-gray-800 mb-2">Useful Links</h3>
+
+        <ul class="space-y-2 text-sm text-gray-500">
+          <li>
+            <a href="#categories" class="hover:text-[#c95860] transition">Categories</a>
+          </li>
+          <li>
+            <a href="#services" class="hover:text-[#c95860] transition">Services</a>
+          </li>
+          <li>
+            <a href="#posts" class="hover:text-[#c95860] transition">Posts</a>
+          </li>
+          <li>
+            <a href="#policy" class="hover:text-[#c95860] transition">Policy</a>
+          </li>
+          <li>
+            <a href="#payment" class="hover:text-[#c95860] transition">Payment Methods</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-base font-bold text-gray-800 mb-2">Services</h3>
+
+        <ul class="space-y-2 text-sm text-gray-500">
+          <li>
+            <a href="#wedding" class="hover:text-[#c95860] transition">Wedding Services</a>
+          </li>
+          <li>
+            <a href="#others" class="hover:text-[#c95860] transition">Others</a>
+          </li>
+          <li>
+            <a href="#others" class="hover:text-[#c95860] transition">Others</a>
+          </li>
+          <li>
+            <a href="#others" class="hover:text-[#c95860] transition">Others</a>
+          </li>
+          <li>
+            <a href="#others" class="hover:text-[#c95860] transition">Others</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h3 class="text-base font-bold text-gray-800 mb-2">Social Media</h3>
+
+        <ul class="space-y-2 text-sm text-gray-500">
+          <li>
+            <a href="#" class="hover:text-[#c95860] transition">Facebook</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#c95860] transition">Instagram</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#c95860] transition">Whatsapp</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#c95860] transition">Telegram</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-[#c95860] transition">Others</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center mt-12 pt-4">
+      <p class="text-gray-400 text-sm">© 2023. All Rights Reserved</p>
+    </div>
+  </footer>
+  <!-- ==================== End Section: Footer ==================== -->
+
+
+  <!-- JS File -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
